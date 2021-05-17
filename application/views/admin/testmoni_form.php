@@ -55,9 +55,6 @@
 							  <div class="article-header">
 								 <div class="article-image" data-background="<?php base_url(); ?>assets/web/img/blog/img10.png">
 								 </div>
-								 <div class="article-badge">
-									<div class="article-badge-item bg-danger"><i class="fas fa-fire"></i> Trending</div>
-								 </div>
 							  </div>
 							  <div class="article-details">
 								 <div class="article-title">
