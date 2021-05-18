@@ -12,7 +12,10 @@
             </div>
             <!-- / container -->
             <hr>
-            <p style="text-align: center !important;">Copyright © <span id="year"></span> / Designed by  <a href="http://www.5thdt.com">5TH Dimension Technologies</a></p>
+            <p style="text-align: center !important;">
+				Copyright © <span id="year"></span> / Designed by  
+				<a href="http://www.5thdt.com" style="color: #FAFAFA !important;">5TH Dimension Technologies</a>
+			</p>
             <!-- /container -->
             <!-- Go To Top Link -->
             <div class="page-scroll hidden-sm hidden-xs">

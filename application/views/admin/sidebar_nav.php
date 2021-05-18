@@ -87,7 +87,7 @@
 							   <a class="nav-link" href="<?php base_url(); ?>testmoni_form">Testimonials</a>
 						   </li>
                            <li>
-							   <a class="nav-link" href="<?php base_url(); ?>">Contact Us</a>
+							   <a class="nav-link" href="<?php base_url(); ?>contact">Contact Us</a>
 						   </li>
                         </ul>
                      </li>
@@ -98,21 +98,35 @@
 						</a>
                         <ul class="dropdown-menu">
                            <li>
-							   <a class="nav-link" href="<?php base_url(); ?>">Gallery</a>
+							   <a class="nav-link" href="<?php base_url(); ?>gallery_img">Gallery</a>
 						   </li>
                            <li>
-							   <a class="nav-link" href="<?php base_url(); ?>">Events</a>
+							   <a class="nav-link" href="<?php base_url(); ?>event">Events</a>
 						   </li>
                            <li>
-							   <a class="nav-link" href="<?php base_url(); ?>">Media</a>
+							   <a class="nav-link" href="<?php base_url(); ?>medias">Media</a>
 						   </li>
 						   <li>
-							   <a class="nav-link" href="<?php base_url(); ?>">Social Media</a>
+							   <a class="nav-link" href="<?php base_url(); ?>social_media">Social Media</a>
 						   </li>	
                         </ul>
                      </li>
 					 <li class="dropdown">
-                        <a href="<?php base_url(); ?>" class="nav-link">
+                        <a href="#" class="menu-toggle nav-link has-dropdown">
+							<i data-feather="globe"></i>
+							<span>SEO</span>
+						</a>
+                        <ul class="dropdown-menu">
+                           <li>
+							   <a class="nav-link" href="<?php base_url(); ?>seo_pages">SITE Pages</a>
+						   </li>
+                           <li>
+							   <a class="nav-link" href="<?php base_url(); ?>seo_meta">META Info</a>
+						   </li>	
+                        </ul>
+                     </li> 
+					 <li class="dropdown">
+                        <a href="<?php base_url(); ?>access" class="nav-link">
 							<i data-feather="users"></i>
 							<span>Access Control</span>
 						</a>

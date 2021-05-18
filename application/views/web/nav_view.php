@@ -34,8 +34,8 @@
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Enjoy</a>
                         <ul class="dropdown-menu">
                            <li><a href="#gallery">Gallery</a></li>
-                           <li><a href="#">Events</a></li>
-                           <li><a href="#">Media</a></li>
+                           <li><a href="<?php base_url(); ?>events">Events</a></li>
+                           <li><a href="<?php base_url(); ?>media">Media</a></li>
                            <li><a href="#page-top">Social Media</a></li>
                         </ul>
                      </li>

@@ -11,9 +11,11 @@
   <link rel="stylesheet" href="<?php base_url(); ?>assets/admin/css/components.css">
   <!-- Custom style CSS -->
   <link rel="stylesheet" href="<?php base_url(); ?>assets/admin/css/custom.css">
+  <link rel="stylesheet" href="<?php base_url(); ?>assets/admin/bundles/bootstrap-social/bootstrap-social.css">	
   <link rel="stylesheet" href="<?php base_url(); ?>assets/admin/bundles/summernote/summernote-bs4.css"> 
   <link rel="stylesheet" href="<?php base_url(); ?>assets/admin/bundles/jquery-selectric/selectric.css">
   <link rel="stylesheet" href="<?php base_url(); ?>assets/admin/bundles/dropzonejs/dropzone.css">
+  <link rel="stylesheet" href="<?php base_url(); ?>assets/admin/bundles/lightgallery/dist/css/lightgallery.css">	
   <!-- Favicons-->
   <link rel="apple-touch-icon" sizes="72x72" href="<?php base_url(); ?>assets/web/img/favicon/favicon_72X72.ico">
   <link rel="apple-touch-icon" sizes="114x114" href="<?php base_url(); ?>assets/web/img/favicon/favicon_114X114.ico">

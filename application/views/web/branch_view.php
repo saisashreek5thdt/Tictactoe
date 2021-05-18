@@ -11,13 +11,20 @@
                <div class="col-lg-4 text-center">
                   <h4>Information</h4>
                   <!-- address info -->
-                  <p>We are located at Pimple Nilak.</p>
+                  <p>We are located at Pimple Nilakh.</p>
                   <!-- Map -->
                   <div id="map-canvas"></div>
                </div>
                <!-- Contact Form -->
                <div class="col-lg-7 col-lg-offset-1">
-                  <h4>Address</h4>
+                  <h4>About Branch</h4>
+				  <!-- contact info -->			   
+                  <div class="contact-info">
+                     <p>
+						Tictactoe Pimple Nilakh Center was started in the year 2013( Initially, we were running the school in kolte Patil's bungalow). Looking at the good response received, the school was later on shifted to a new independent premises at, 24K Glitterati II ,Vishal Nagar, Pimple Nilakh, Pune. Pre- Covid, Situation - Classes -Playgroup, Nursery ,LKG &amp; UKG. 
+					 </p> 
+                  </div>
+				  <h4>Address</h4>
 				  <!-- contact info -->			   
                   <div class="contact-info">
                      <p>

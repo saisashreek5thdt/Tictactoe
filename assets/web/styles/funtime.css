@@ -21,7 +21,7 @@ footer,
 .fc-direction-ltr .fc-button-group>.fc-button:not(:last-child),
 .fc-button.fc-button-primary,
 .fc .fc-button:not(:disabled), .fc a[data-navlink], .fc-event.fc-event-draggable, .fc-event[href]
-{background-color:#34327C;}
+{background-color:#31b2d1 !important;}
 
  h1,
  a,
@@ -43,8 +43,8 @@ footer,
 
 /* SVG path */
 #deco-clouds path {
-	fill: #34327C;
-	stroke: #34327C;
+	fill: #9bbc2c;
+	stroke: #9bbc2c;
 }
 
 /*________  Pink________  */
@@ -118,7 +118,6 @@ footer a,
 .open>.dropdown-toggle.btn-primary:focus,
 .open>.dropdown-toggle.btn-primary:hover,
 .team-item .team-caption,
-.navbar-custom ul.nav ul.dropdown-menu li a,
 .panel-heading a,
 .panel-heading a:hover,
 .nav-pills .nav > li > a:focus ,
@@ -132,10 +131,15 @@ footer a,
 #instafeed .likes,
 .social-media a i:hover,
 .blog-tags a,
-.date-category,
-.dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover
+.date-category
 {background-color:#FAFAFA !important;
 color:#000 !important;}
+
+.navbar-custom ul.nav ul.dropdown-menu li a,
+.dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover
+{background-color:transparent!important;
+color:#FAFAFA !important;}
+
 .back-to-top i {background-color:#e50a80 !important;}
 
 .team-item img,

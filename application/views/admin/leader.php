@@ -33,109 +33,126 @@
 					   </div>
                   </div>
 				  <div class="row">
-                        <div class="col-12">
-                           <div class="card">
-                              <div class="card-header">
-                                 <h4>Our Leadership Team - Info</h4>
-                              </div>
-                              <div class="card-body">
-								 <div class="form-group row mb-4">
-                                    <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3">Select Leader</label>
-                                    <div class="col-sm-12 col-md-7">
-                                       <select class="form-control selectric">
-                                          <option>Leader 1</option>
-                                          <option>Leader 2</option>
-                                          <option>Leader 3</option>
-                                       </select>
-                                    </div>
-                                 </div>
-								 <div class="form-group row mb-4">
-                                    <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3">Title</label>
-                                    <div class="col-sm-12 col-md-7">
-                                       <input type="text" class="form-control">
-                                    </div>
-                                 </div> 
-                                 <div class="form-group row mb-4">
-                                    <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3">Content</label>
-                                    <div class="col-sm-12 col-md-7">
-                                       <textarea class="summernote"></textarea>
-                                    </div>
-                                 </div>
-                                 <div class="form-group row mb-4">
-                                    <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3"></label>
-                                    <div class="col-sm-12 col-md-7">
-                                       <button class="btn btn-primary">Publish</button>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div> 
-				  <div class="row">
-					  <div class="col-12 col-md-12 col-lg-12">
-                           <div class="card">
-                              <div class="padding-20">
-                                 <ul class="nav nav-tabs" id="myTab2" role="tablist">
-                                    <li class="nav-item">
-                                       <a class="nav-link active" id="home-tab2" data-toggle="tab" href="#leader_1" role="tab" aria-selected="true">
-										   Leader 1
-									   </a>
-                                    </li>
-									<li class="nav-item">
-                                       <a class="nav-link" id="home-tab3" data-toggle="tab" href="#leader_2" role="tab" aria-selected="true">
-										   Leader 2
-									   </a>
-                                    </li>
-									<li class="nav-item">
-                                       <a class="nav-link" id="home-tab4" data-toggle="tab" href="#leader_3" role="tab" aria-selected="true">
-										   Leader 3
-									   </a>
-                                    </li> 
-                                 </ul>
-                                 <div class="tab-content tab-bordered" id="myTab3Content">
-                                    <div class="tab-pane fade show active" id="leader_1" role="tabpanel" aria-labelledby="home-tab2">
-									   <p>
-										   <img class="img-responsive thumbnail" src="assets/img/image-gallery/thumb/thumb-1.png" alt="">
-									   </p>	
-                                       <p class="m-t-30">Completed my graduation in Arts from the well known and
-                                          renowned institution
-                                          of India – SARDAR PATEL ARTS COLLEGE, BARODA in 2000-01, which was
-                                          affiliated
-                                          to M.S. University. I ranker in University exams from the same
-                                          university
-                                          from 1996-01.
-                                       </p>
-                                    </div>
-									<div class="tab-pane fade show" id="leader_2" role="tabpanel" aria-labelledby="home-tab3">
-									   <p>
-										   <img class="img-responsive thumbnail" src="assets/img/image-gallery/thumb/thumb-1.png" alt="">
-									   </p>	
-                                       <p class="m-t-30">Completed my graduation in Arts from the well known and
-                                          renowned institution
-                                          of India – SARDAR PATEL ARTS COLLEGE, BARODA in 2000-01, which was
-                                          affiliated
-                                          to M.S. University. I ranker in University exams from the same
-                                          university
-                                          from 1996-01.
-                                       </p>
-                                    </div>
-									<div class="tab-pane fade show" id="leader_3" role="tabpanel" aria-labelledby="home-tab4">
-									   <p>
-										   <img class="img-responsive thumbnail" src="assets/img/image-gallery/thumb/thumb-1.png" alt="">
-									   </p>	
-                                       <p class="m-t-30">Completed my graduation in Arts from the well known and
-                                          renowned institution
-                                          of India – SARDAR PATEL ARTS COLLEGE, BARODA in 2000-01, which was
-                                          affiliated
-                                          to M.S. University. I ranker in University exams from the same
-                                          university
-                                          from 1996-01.
-                                       </p>
-                                    </div> 
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-				  </div> 
-               </section>
-            </div>
+					<div class="col-12">
+					   <div class="card">
+						  <div class="card-header">
+							 <h4>Our Leadership Team - Info</h4>
+						  </div>
+						  <div class="card-body">
+							 <div class="form-group row mb-4">
+								<label class="col-form-label text-md-right col-12 col-md-3 col-lg-3">Select Leader</label>
+								<div class="col-sm-12 col-md-7">
+								   <select class="form-control selectric">
+									  <option>Leader 1</option>
+									  <option>Leader 2</option>
+									  <option>Leader 3</option>
+								   </select>
+								</div>
+							 </div>
+							 <div class="form-group row mb-4">
+								<label class="col-form-label text-md-right col-12 col-md-3 col-lg-3">Title</label>
+								<div class="col-sm-12 col-md-7">
+								   <input type="text" class="form-control">
+								</div>
+							 </div> 
+							 <div class="form-group row mb-4">
+								<label class="col-form-label text-md-right col-12 col-md-3 col-lg-3">Content</label>
+								<div class="col-sm-12 col-md-7">
+								   <textarea class="summernote"></textarea>
+								</div>
+							 </div>
+							 <div class="form-group row mb-4">
+								<label class="col-form-label text-md-right col-12 col-md-3 col-lg-3"></label>
+								<div class="col-sm-12 col-md-7">
+								   <button class="btn btn-primary">Publish</button>
+								</div>
+							 </div>
+						  </div>
+					   </div>
+					</div>
+				   </div>
+				   <div class="row">
+					   <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+						   <article class="article article-style-b">
+							  <div class="article-header">
+								 <div class="article-image" data-background="<?php base_url(); ?>assets/web/img/blog/img10.png">
+								 </div>
+							  </div>
+							  <div class="article-details">
+								 <div class="article-title">
+									<h2><a href="#">The oddest place you will find photo studios</a></h2>
+								 </div>
+								 <p>A don't spirit gathered two under, lights said. May Multiply seasons you'll spirit tree morning
+									hath first signs.
+								 </p>
+								 <div class="article-cta">
+									<a href="<?php base_url(); ?>leader_view">Read More <i class="fas fa-chevron-right"></i></a>
+								 </div>
+							  </div>
+						   </article>
+						</div>
+						<div class="col-12 col-sm-6 col-md-6 col-lg-3">
+						   <article class="article article-style-b">
+							  <div class="article-header">
+								 <div class="article-image" data-background="<?php base_url(); ?>assets/web/img/blog/img15.png">
+								 </div>
+							  </div>
+							  <div class="article-details">
+								 <div class="article-title">
+									<h2><a href="#">The oddest place you will find photo studios</a></h2>
+								 </div>
+								 <p>A don't spirit gathered two under, lights said. May Multiply seasons you'll spirit tree morning
+									hath first signs.
+								 </p>
+								 <div class="article-cta">
+									<a href="<?php base_url(); ?>leader_view">Read More <i class="fas fa-chevron-right"></i></a>
+								 </div>
+							  </div>
+						   </article>
+						</div>
+						<div class="col-12 col-sm-6 col-md-6 col-lg-3">
+						   <article class="article article-style-b">
+							  <div class="article-header">
+								 <div class="article-image" data-background="<?php base_url(); ?>assets/web/img/blog/img07.png">
+								 </div>
+							  </div>
+							  <div class="article-details">
+								 <div class="article-title">
+									<h2><a href="#">The oddest place you will find photo studios</a></h2>
+								 </div>
+								 <p>A don't spirit gathered two under, lights said. May Multiply seasons you'll spirit tree morning
+									hath first signs.
+								 </p>
+								 <div class="article-cta">
+									<a href="<?php base_url(); ?>leader_view">Read More <i class="fas fa-chevron-right"></i></a>
+								 </div>
+							  </div>
+						   </article>
+						</div>
+						<div class="col-12 col-sm-6 col-md-6 col-lg-3">
+						   <article class="article article-style-b">
+							  <div class="article-header">
+								 <div class="article-image" data-background="<?php base_url(); ?>assets/web/img/blog/img02.png">
+								 </div>
+							  </div>
+							  <div class="article-details">
+								 <div class="article-title">
+									<h2><a href="#">The oddest place you will find photo studios</a></h2>
+								 </div>
+								 <p>A don't spirit gathered two under, lights said. May Multiply seasons you'll spirit tree morning
+									hath first signs.
+								 </p>
+								 <div class="article-cta">
+									<a href="<?php base_url(); ?>leader_view">Read More <i class="fas fa-chevron-right"></i></a>
+								 </div>
+							  </div>
+						   </article>
+						</div>
+					    <div class="col-12">
+							<a href="<?php base_url(); ?>more_leader">
+								<button class="btn btn-primary">More Leaders</button>
+							</a>
+					    </div>
+				   </div>
+				</section>	
+			</div>

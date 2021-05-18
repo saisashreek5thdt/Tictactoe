@@ -13,6 +13,8 @@
 	  <script src="<?php base_url(); ?>assets/admin/bundles/jquery-selectric/jquery.selectric.min.js"></script>
  	  <script src="<?php base_url(); ?>assets/admin/bundles/dropzonejs/min/dropzone.min.js"></script>
 	  <script src="<?php base_url(); ?>assets/admin/js/page/multiple-upload.js"></script>
+	  <script src="<?php base_url(); ?>assets/admin/bundles/lightgallery/dist/js/lightgallery-all.js"></script>
+	  <script src="<?php base_url(); ?>assets/admin/js/page/light-gallery.js"></script>
       <!-- Template JS File -->
       <script src="<?php base_url(); ?>assets/admin/js/scripts.js"></script>
       <!-- Custom JS File -->

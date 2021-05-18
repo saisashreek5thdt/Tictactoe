@@ -35,43 +35,18 @@
                               <div class="card-body">
                                  <div id="aniimated-thumbnials" class="list-unstyled row clearfix">
                                     <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                                       <a href="assets/img/image-gallery/1.png" data-sub-html="Demo Description">
-                                       <img class="img-responsive thumbnail" src="assets/img/image-gallery/thumb/thumb-1.png" alt="">
+                                       <a href="<?php base_url(); ?>assets/admin/img/image-gallery/1.png" data-sub-html="Demo Description">
+                                       <img class="img-responsive thumbnail" src="<?php base_url(); ?>assets/admin/img/image-gallery/thumb/thumb-1.png" alt="">
                                        </a>
                                     </div>
                                     <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                                       <a href="assets/img/image-gallery/2.png" data-sub-html="Demo Description">
-                                       <img class="img-responsive thumbnail" src="assets/img/image-gallery/thumb/thumb-2.png" alt="">
+                                       <a href="<?php base_url(); ?>assets/admin/img/image-gallery/2.png" data-sub-html="Demo Description">
+                                       <img class="img-responsive thumbnail" src="<?php base_url(); ?>assets/admin/img/image-gallery/thumb/thumb-2.png" alt="">
                                        </a>
                                     </div>
                                     <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                                       <a href="assets/img/image-gallery/3.png" data-sub-html="Demo Description">
-                                       <img class="img-responsive thumbnail" src="assets/img/image-gallery/thumb/thumb-3.png" alt="">
-                                       </a>
-                                    </div>
-                                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                                       <a href="assets/img/image-gallery/4.png" data-sub-html="Demo Description">
-                                       <img class="img-responsive thumbnail" src="assets/img/image-gallery/thumb/thumb-4.png" alt="">
-                                       </a>
-                                    </div>
-                                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                                       <a href="assets/img/image-gallery/5.png" data-sub-html="Demo Description">
-                                       <img class="img-responsive thumbnail" src="assets/img/image-gallery/thumb/thumb-5.png" alt="">
-                                       </a>
-                                    </div>
-                                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                                       <a href="assets/img/image-gallery/6.png" data-sub-html="Demo Description">
-                                       <img class="img-responsive thumbnail" src="assets/img/image-gallery/thumb/thumb-6.png" alt="">
-                                       </a>
-                                    </div>
-                                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                                       <a href="assets/img/image-gallery/7.png" data-sub-html="Demo Description">
-                                       <img class="img-responsive thumbnail" src="assets/img/image-gallery/thumb/thumb-7.png" alt="">
-                                       </a>
-                                    </div>
-                                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                                       <a href="assets/img/image-gallery/8.png" data-sub-html="Demo Description">
-                                       <img class="img-responsive thumbnail" src="assets/img/image-gallery/thumb/thumb-8.png" alt="">
+                                       <a href="<?php base_url(); ?>assets/admin/img/image-gallery/3.png" data-sub-html="Demo Description">
+                                       <img class="img-responsive thumbnail" src="<?php base_url(); ?>assets/admin/img/image-gallery/thumb/thumb-3.png" alt="">
                                        </a>
                                     </div>
                                  </div>
