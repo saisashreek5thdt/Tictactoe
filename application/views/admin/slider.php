@@ -22,6 +22,12 @@
 									<input type="file" class="custom-file-input" id="customFile">
 									<label class="custom-file-label" for="customFile">Choose file</label>
 								 </div>
+								 <br /> 
+								 <div class="form-group" style="padding-top: 2rem !important;"> 
+									 <div class="input-group mb-2 mr-sm-2">
+										 <button class="btn btn-primary">Add Images</button>
+									 </div>
+								 </div>
 							  </div>
 						   </div>
 					   </div>
