@@ -42,9 +42,9 @@
             <!-- Image -->
             <img src="<?php base_url(); ?>assets/web/img/parallaxobject1.png" alt="">
          </div>
-         <?php 
+         <?php /*?><?php 
 		  	include ('team_view.php');
-		  ?>
+		  ?><?php */?>
          <?php 
 		  	include ('activities_view.php');
 		  ?>

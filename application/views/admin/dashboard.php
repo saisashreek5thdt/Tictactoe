@@ -1,7 +1,7 @@
             <!-- Main Content -->
             <div class="main-content">
                <section class="section">
-                  <div class="row ">
+                  <div class="row">
                      <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-xs-12">
                         <div class="card">
                            <div class="card-statistic-4">
@@ -47,5 +47,88 @@
                         </div>
                      </div>
                   </div>
+				  <div class="row">
+					  <div class="col-md-6 col-lg-12 col-xl-6">
+                        <div class="card">
+                           <div class="card-header">
+                              <h4>Enquiry Form</h4>
+                           </div>
+                           <div class="card-body">
+                              <div class="table-responsive">
+                                 <table class="table table-hover mb-0">
+                                    <thead>
+                                       <tr>
+                                          <th>#</th>
+                                          <th>Student Name</th>
+                                          <th>Date</th>
+                                          <th>Father / Mother Name</th>
+                                          <th>Mobile Number</th>
+										  <th>Email ID</th> 
+                                       </tr>
+                                    </thead>
+                                    <tbody>
+                                       <tr>
+										   <td>1</td>
+										   <td>Rakesh Raj</td>
+										   <td>25-12-2020</td>
+										   <td>Sashreek</td>
+										   <td>12345689</td>
+										   <td>sai@5thdt.com</td>
+										</tr>
+									 	<tr>
+										   <td>2</td>
+										   <td>Rakesh Raj</td>
+										   <td>25-12-2020</td>
+										   <td>Sashreek</td>
+										   <td>12345689</td>
+										   <td>sai@5thdt.com</td>
+										</tr>
+										<tr>
+										   <td>3</td>
+										   <td>Rakesh Raj</td>
+										   <td>25-12-2020</td>
+										   <td>Sashreek</td>
+										   <td>12345689</td>
+										   <td>sai@5thdt.com</td>
+										</tr>
+										<tr>
+										   <td>4</td>
+										   <td>Rakesh Raj</td>
+										   <td>25-12-2020</td>
+										   <td>Sashreek</td>
+										   <td>12345689</td>
+										   <td>sai@5thdt.com</td>
+										</tr>
+										<tr>
+										   <td>5</td>
+										   <td>Rakesh Raj</td>
+										   <td>25-12-2020</td>
+										   <td>Sashreek</td>
+										   <td>12345689</td>
+										   <td>sai@5thdt.com</td>
+										</tr>
+										<tr>
+										   <td>6</td>
+										   <td>Rakesh Raj</td>
+										   <td>25-12-2020</td>
+										   <td>Sashreek</td>
+										   <td>12345689</td>
+										   <td>sai@5thdt.com</td>
+										</tr>
+										<tr>
+										   <td>7</td>
+										   <td>Rakesh Raj</td>
+										   <td>25-12-2020</td>
+										   <td>Sashreek</td>
+										   <td>12345689</td>
+										   <td>sai@5thdt.com</td>
+										</tr>
+                                    </tbody>
+                                 </table>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+				  </div> 
                </section>
             </div>

@@ -16,7 +16,7 @@
 					 <li class="dropdown">
 						 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Explore</a>
 						 <ul class="dropdown-menu">
-                           <li><a href="#about">Our Approach</a></li>
+                           <li><a href="<?php base_url(); ?>#about">Our Approach</a></li>
                            <li><a href="<?php base_url(); ?>explore">Meet Our Leadership Team</a></li>
                            <li><a href="<?php base_url(); ?>program">Our Programmes</a></li>
                            <li><a href="<?php base_url(); ?>fees">Fee Structure</a></li>

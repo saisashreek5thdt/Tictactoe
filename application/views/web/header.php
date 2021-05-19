@@ -10,7 +10,7 @@
 	  <meta name="Keywords" content=""> 
       <meta name="author" content="">
       <!-- Page title -->
-      <title>TicTacToe</title>
+      <title>TicTacToe Preschool</title>
       <!--[if lt IE 9]>
       <script src="js/respond.js"></script>
       <![endif]-->

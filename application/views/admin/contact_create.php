@@ -2,7 +2,7 @@
             <div class="main-content">
                <section class="section">
                   <div class="row">
-					  <div class="col-8 col-md-6 col-lg-6">
+					  <!--<div class="col-8 col-md-6 col-lg-6">
 						  <div class="card">
 							  <div class="card-header">
 								 <h4>Branch (LOGO) - Image</h4>
@@ -15,7 +15,7 @@
 								 </div>
 							  </div>
 						   </div>
-					   </div>
+					   </div>-->
 					   <div class="col-4 col-md-6 col-lg-6">
 						   <div class="card">
 							   <div class="card-header">
@@ -54,6 +54,15 @@
 								<label class="col-form-label text-md-right col-12 col-md-3 col-lg-3">Title</label>
 								<div class="col-sm-12 col-md-7">
 								   <input type="text" class="form-control">
+								</div>
+							 </div>
+							 <div class="form-group row mb-4">
+								<label class="col-form-label text-md-right col-12 col-md-3 col-lg-3">Branch (LOGO) Image</label>
+								<div class="col-sm-12 col-md-7">
+									<div class="custom-file">
+									   <input type="file" class="custom-file-input" id="customFile">
+									   <label class="custom-file-label" for="customFile">Choose file</label>
+									</div>
 								</div>
 							 </div> 
 							 <div class="form-group row mb-4">
