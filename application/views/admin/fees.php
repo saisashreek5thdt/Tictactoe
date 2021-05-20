@@ -31,6 +31,21 @@
 							  </div> 
 						   </div>
 					   </div>
+					   <div class="col-4 col-md-6 col-lg-6">
+						   <div class="card">
+							   <div class="card-header">
+								 <h4>Class - Create Name</h4>
+							  </div>
+							  <div class="card-body">
+								  <form class="form-inline">
+                                    <input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="Create Class Name">
+                                    <div class="input-group mb-2 mr-sm-2">
+                                       <button class="btn btn-primary">Create Class</button>
+                                    </div>
+                                 </form>
+							  </div> 
+						   </div>
+					   </div>
                   </div>
 				  <div class="row">
                         <div class="col-12">

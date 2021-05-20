@@ -5,7 +5,7 @@
                         <div class="col-12">
                            <div class="card">
                               <div class="card-header">
-                                 <h4>Our Approuch - Info</h4>
+                                 <h4>Our Approach - Info</h4>
                               </div>
                               <div class="card-body">
                                  <div class="form-group row mb-4">
@@ -31,7 +31,7 @@
                                  <ul class="nav nav-tabs" id="myTab2" role="tablist">
                                     <li class="nav-item">
                                        <a class="nav-link active" id="home-tab2" data-toggle="tab" href="#about" role="tab" aria-selected="true">
-										   Vision &amp; Mission
+										   Our Approach - Info
 									   </a>
                                     </li>
                                  </ul>
