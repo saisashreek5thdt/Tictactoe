@@ -26,7 +26,7 @@
 										<br /> 
 										<div class="form-group" style="padding-top: 2rem !important;"> 
 											<div class="input-group mb-2 mr-sm-2">
-												<button type="submit" class="btn btn-primary btn-sm">Add Images</button>
+												<button type="submit" class="btn btn-primary btn-sm">Add Image</button>
 											</div>
 										</div>
 									</div>
