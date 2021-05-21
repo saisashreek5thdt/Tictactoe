@@ -45,13 +45,16 @@ $route['admin'] = 'home/admin';
 $route['dashboard'] = 'dashboard';
 
 $route['slider'] = 'dashboard/slider';
+$route['login_check'] = 'home/login_check';
+$route['logout'] = 'home/logout';
 
 /* Explore Tab Routes Start */
 
 $route['approach'] = 'dashboard/approach';
-
+$route['add'] = 'dashboard/add';
 $route['approachtabs'] = 'dashboard/approachtabs';
-
+$route['approach_add'] = 'dashboard/approach_add';
+$route['delete'] = 'dashboard/delete';
 $route['leader'] = 'dashboard/leader';
 
 $route['more_leader'] = 'dashboard/more_leader';

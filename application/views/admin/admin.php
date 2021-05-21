@@ -14,8 +14,22 @@
                   <div class="card-header text-center">
                     <h4 class="text-center">Login</h4>
                   </div>
+                  <?php if ($this->session->flashdata('msg')) : ?>
+                <?php echo '<div class="alert alert-success icons-alert">
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <i class="icofont icofont-close-line-circled">×</i>
+                </button>
+                <p><strong>Success! &nbsp;&nbsp;</strong>' . $this->session->flashdata('msg') . '</p></div>'; ?>
+            <?php endif; ?>
+            <?php if ($this->session->flashdata('error')) : ?>
+                <?php echo '<div class="alert alert-danger icons-alert">
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <i class="icofont icofont-close-line-circled"></i>
+                </button>
+                <p><strong>Error! &nbsp;&nbsp;</strong>' . $this->session->flashdata('error') . '</p></div>'; ?>
+            <?php endif; ?>
                   <div class="card-body">
-                    <form method="POST" action="<?php base_url(); ?>dashboard">
+                    <form method="POST" action="<?php echo base_url(); ?>login_check">
                       <div class="form-group floating-addon">
                         <label>Email</label>
                         <div class="input-group">
@@ -49,7 +63,7 @@
                 <div class="col-12 col-md-12 col-lg-7 p-0">
                   <div class="contact-map">
 					  <div class="contact-map">
-						  <img src="<?php base_url(); ?>assets/web/img/logo/logo.jpg" class="img-fluid p-5" height="100%" alt="" />
+						  <img src="<?php echo base_url(); ?>assets/web/img/logo/logo.jpg" class="img-fluid p-5" height="100%" alt="" />
 					  </div>
 				  </div>
                 </div>
@@ -63,3 +77,51 @@
       </div>
     </section>
   </div>
+
+  </html>
+<?php 
+  if(($this->session->flashdata('error'))!= ""){
+?>
+<script type="text/javascript">
+$(document).ready(function(){
+  $.toast({
+    heading: 'Error Message',
+    text: '<?php echo $this->session->flashdata('error');?>',
+    position: 'top-right',
+    loaderBg: '#00ff48',
+    icon:'#00ff48',
+    hideAfter: '3500',
+    stack: 6
+
+  });
+
+});
+
+
+</script>
+<?php 
+  }
+?></html>
+<?php 
+  if(($this->session->flashdata('msg'))!= ""){
+?>
+<script type="text/javascript">
+$(document).ready(function(){
+  $.toast({
+    //	heading: 'Congratulations!!!',
+            text: '<?php echo $this->session->flashdata('msg'); ?>',
+            position: 'top-right',
+            loaderBg: '#ff6849',
+            icon: 'success',
+            hideAfter: 3500,
+            stack: 6
+
+  });
+
+});
+
+
+</script>
+<?php 
+  }
+?>

@@ -7,20 +7,22 @@
                               <div class="card-header">
                                  <h4>Our Approach - Info</h4>
                               </div>
+                              <form action="<?php echo base_url();?>approach_add" method="post">
                               <div class="card-body">
                                  <div class="form-group row mb-4">
                                     <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3">Content</label>
                                     <div class="col-sm-12 col-md-7">
-                                       <textarea class="summernote"></textarea>
+                                       <textarea class="summernote" name="content"></textarea>
                                     </div>
                                  </div>
                                  <div class="form-group row mb-4">
                                     <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3"></label>
                                     <div class="col-sm-12 col-md-7">
-                                       <button class="btn btn-primary">Publish</button>
+                                       <button type="submit" class="btn btn-primary">Publish</button>
                                     </div>
                                  </div>
                               </div>
+                              </form>
                            </div>
                         </div>
                      </div> 
@@ -37,18 +39,17 @@
                                  </ul>
                                  <div class="tab-content tab-bordered" id="myTab3Content">
                                     <div class="tab-pane fade show active" id="about" role="tabpanel" aria-labelledby="home-tab2">
+                                   
 									   <p>
 										   <img class="img-responsive thumbnail" src="assets/img/image-gallery/thumb/thumb-1.png" alt="">
 									   </p>	
-                                       <p class="m-t-30">Completed my graduation in Arts from the well known and
-                                          renowned institution
-                                          of India – SARDAR PATEL ARTS COLLEGE, BARODA in 2000-01, which was
-                                          affiliated
-                                          to M.S. University. I ranker in University exams from the same
-                                          university
-                                          from 1996-01.
+                              <?php foreach($approach as $approachs){ ?>
+                                       <p class="m-t-30"><?php echo $approachs->content; ?>
                                        </p>
-                                       <p>Worked as Professor and Head of the department at Sarda Collage, Rajkot,
+                                       <a href="<?php echo base_url(); ?>dashboard/delete/<?php echo  $approachs->id; ?>" class="btn btn-danger btn-action" data-toggle="tooltip" title="Delete" data-confirm="Are You Sure?|This action can not be undone. Do you want to continue?"
+                                        ><i class="fas fa-trash"></i></a> 
+                                       <?php } ?>
+                                       <!-- <p>Worked as Professor and Head of the department at Sarda Collage, Rajkot,
                                           Gujarat
                                           from 2003-2015 
                                        </p>
@@ -90,7 +91,7 @@
                                           <li>Lorem Ipsum is simply dummy text of the printing and typesetting
                                              industry.
                                           </li>
-                                       </ul>
+                                       </ul> -->
                                     </div>
                                  </div>
                               </div>

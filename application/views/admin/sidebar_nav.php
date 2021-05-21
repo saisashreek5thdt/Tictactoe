@@ -4,6 +4,7 @@
          <div class="main-wrapper main-wrapper-1">
             <div class="navbar-bg"></div>
             <nav class="navbar navbar-expand-lg main-navbar sticky">
+            
                <div class="form-inline mr-auto">
                   <ul class="navbar-nav mr-3">
                      <li>
@@ -13,6 +14,13 @@
 					 </li>
                   </ul>
                </div>
+               <?php if ($this->session->flashdata('msg')) : ?>
+                <?php echo '<div class="alert alert-success icons-alert">
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <i class="icofont icofont-close-line-circled">×</i>
+                </button>
+                <p><strong>Success! &nbsp;&nbsp;</strong>' . $this->session->flashdata('msg') . '</p></div>'; ?>
+            <?php endif; ?>
                <ul class="navbar-nav navbar-right">
                   <li class="dropdown">
                      <a href="#" data-toggle="dropdown"
@@ -22,7 +30,7 @@
 					  </a>
                      <div class="dropdown-menu dropdown-menu-right pullDown">
                         <div class="dropdown-title">Hello TicTacToe</div>
-                        <a href="<?php base_url(); ?>admin" class="dropdown-item has-icon text-danger"> 
+                        <a href="<?php echo base_url(); ?>logout" class="dropdown-item has-icon text-danger"> 
 							<i class="fas fa-sign-out-alt"></i>
 							Logout
                         </a>
