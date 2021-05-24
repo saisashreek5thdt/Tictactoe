@@ -1,5 +1,5 @@
-<!-- Main Content -->
-            <div class="main-content">
+<!-- Main Content --><?php error_reporting(0); ?>
+<div class="main-content">
                <section class="section">
                <!-- <?php if ($this->session->flashdata('success')) { ?>
 
@@ -40,12 +40,13 @@
 								 <h4>Our Approach Tab - Create Name</h4>
 							  </div>
 							  <div class="card-body">
-								  <form class="form-inline" action="<?php base_url(); ?>approachtabs_add" method="post">
-                              <input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" name ="title" placeholder="Create Our Approach Tab Name" required >
+								  <!-- <form class="form-inline" action="<?php base_url(); ?>approachtabs_add" method="post"> -->
+                                 
+                              <input type="text" value="<?php //echo $title_id->title ?>"class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" name ="title" placeholder="Create Our Approach Tab Name" required >
                               <div class="input-group mb-2 mr-sm-2">
                                  <button type="submit"class="btn btn-primary">Create Our Approach Tab</button>
                               </div>
-                           </form>
+                           <!-- </form> -->
 							  </div> 
 						   </div>
 					   </div>
@@ -57,7 +58,8 @@
                               <div class="card-header">
                                  <h4>Our Approach Tab - Info</h4>
                               </div>
-                              <form class="form-inline" action="<?php base_url(); ?>approachtinfo_add" method="post" enctype="multipart/form-data">
+                              <form class="form-inline" action="<?php base_url(); ?>dashboard/info_update/<?php echo $info_id->id; ?>" method="post" enctype="multipart/form-data">
+                              <input type="hidden" name="id" value="<?php echo $info_id->id ?>">
                                  <div class="card-body">
                                     <div class="form-group row mb-4">
                                        <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3">Select Tab</label>
@@ -65,7 +67,7 @@
                                           <select class="form-control selectric" name="title_data" required>
                                              <option >Select</option>
                                              <?php foreach ($title as $row) { ?>  
-                                             <option value="<?php echo $row->id?>" > <?php echo $row->title?></option>
+                                             <option  value="<?php echo $row->id?>"<?php if($row->id == $info_id->title_id) { echo "selected"; } ?> > <?php echo $row->title?></option>
                                              <?php } ?>
                                           </select>
                                        </div>
@@ -74,7 +76,7 @@
                                     <div class="form-group row mb-4">
                                        <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3">Title</label>
                                        <div class="col-sm-12 col-md-7">
-                                       <input type="text" class="form-control"  name="title" id="">
+                                       <input type="text" class="form-control"  value="<?php echo $info_id->title ?>"  name="title" id="">
                                      
                                         
                                        </div>
@@ -83,7 +85,7 @@
                                        <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3">Icon</label>
                                        <div class="col-sm-12 col-md-7">
                                           <div class="custom-file">
-                                          <input type="text" class="form-control"  name="icon" id="">
+                                          <input type="text" class="form-control"  value="<?php echo $info_id->icon_image ?>"  name="icon" id="">
                                           <label class="" for=""></label>
                                  </div>
                                        </div>
@@ -91,7 +93,7 @@
                                     <div class="form-group row mb-4">
                                        <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3">Content</label>
                                        <div class="col-sm-12 col-md-7">
-                                       <textarea class="form-control" name="text_title"  rows="3"></textarea>
+                                       <textarea class="form-control" name="text_title"  rows="3"><?php echo $info_id->text_icon ?></textarea>
                                           <!-- <textarea class="summernote" name=""></textarea> -->
                                        </div>
                                     </div>
@@ -106,78 +108,7 @@
                            </div>
                         </div>
                      </div> 
-                     <div class="row">
-					 <div class="col-md-12 col-lg-12 col-xl-12">
-                        <div class="card">
-                           <div class="card-header">
-                              <h4>Site Pages</h4>
-                           </div>
-                           <div class="card-body">
-                              <div class="table-responsive">
-                                 <table class="table table-hover mb-0">
-                                    <thead>
-                                       <tr>
-                                          <th>#</th>
-                                          <th>Tilte</th> 
-                                          <th>Icon</th>
-                                          <th>Conecnt</th>
-                                          <th>Actions</th> 
-                                       </tr>
-                                    </thead>
-                                    <tbody>
-                                       <?php  $i = 0;
-                                          foreach ( $info as $in) {  
-                                         
-                                       ?> 
-                                       <tr>
-                                             <td><?php echo ++$i ?></td>
-                                             <td><?php echo  $in->title ?></td>
-                                             <td><?php echo  $in->icon_image ?></td>
-                                             <td><?php echo  substr($in->text_icon,0,60) ?></td>
-                                             <td>
-                                                <a href="<?php echo base_url(); ?>dashboard/info_edit/<?php  echo  $in->id ?>"class="btn btn-primary btn-action mr-1"><i class="fas fa-pencil-alt"></i></a>  
-                                             <a href="<?php echo base_url(); ?>dashboard/delete_info/<?php  echo  $in->id ?>" class="btn btn-danger btn-action" data-toggle="tooltip" title="Delete"
-                                                            data-confirm="Are You Sure?|This action can not be undone. Do you want to continue?"
-                                                            data-confirm-yes="alert('Deleted')">
-                                                <i class="fas fa-trash"></i>
-                                                      </a>
-										               </td>
-										         </tr>
-                                       <?php } ?>
-                                    </tbody>
-                                 </table>
-                              </div>
-                           </div>
-						   <div class="card-footer text-right">
-							<nav class="d-inline-block">
-							  <ul class="pagination mb-0">
-								<li class="page-item disabled">
-								  <a class="page-link" href="#" tabindex="-1">
-									  <i class="fas fa-chevron-left"></i>
-								  </a>
-								</li>
-								<li class="page-item active">
-									<a class="page-link" href="#">1 
-										<span class="sr-only">(current)</span>
-									</a>
-								</li>
-								<li class="page-item">
-								  <a class="page-link" href="#">2</a>
-								</li>
-								<li class="page-item">
-									<a class="page-link" href="#">3</a>
-								</li>
-								<li class="page-item">
-								  <a class="page-link" href="#">
-									  <i class="fas fa-chevron-right"></i>
-								  </a>
-								</li>
-							  </ul>
-							</nav>
-						  </div>	
-                        </div>
-                     </div>
-                  </div>
+                     
                </section>
             </div>
 
@@ -247,6 +178,4 @@ $(document).ready(function(){
 <?php }else if($this->session->flashdata('info')){  ?>
     toastr.info("<?php echo $this->session->flashdata('info'); ?>");
 <?php } ?>
-
-
 </script>

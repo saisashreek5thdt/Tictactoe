@@ -54,6 +54,10 @@ $route['approach'] = 'dashboard/approach';
 $route['add'] = 'dashboard/add';
 $route['approachtabs'] = 'dashboard/approachtabs';
 $route['approach_add'] = 'dashboard/approach_add';
+$route['approachtabs_add'] = 'dashboard/approachtabs_add';
+$route['approachtinfo_add'] = 'dashboard/approachtinfo_add';
+$route['leader_name_add'] = 'dashboard/leader_name_add';
+$route['leader_add'] = 'dashboard/leader_add';
 $route['delete'] = 'dashboard/delete';
 $route['leader'] = 'dashboard/leader';
 

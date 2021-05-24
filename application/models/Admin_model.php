@@ -110,5 +110,112 @@ class Admin_model extends CI_Model {
      
 
     //**********************End Approch*************//
+
+
+    //*********************  Approch Tab *************/
+    public function our_approachTab($data){
+        $query = $this->db->insert('tbl_icons',$data);
+        return $query;
+
+    }
+    public function get_our_approachTab(){
+        $this->db->select("*");
+        $this->db->from('tbl_icons');
+        $query = $this->db->get();
+        return $query->result();
+    }
+
+
+    public function get_by_title_id($id){
+        $this->db->where("id", $id);
+        return $this->db->get("tbl_icons")->row();
+    }
+
+    //*********************  Approch Tab *************/
+
+     //*********************  approachtinfo_add *************/
+
+    public function approachtinfo_add($data){
+        $query = $this->db->insert('tbl_our_approach_icons',$data);
+        return $query;
+
+    }
+    public function get_our_approachtinfo(){
+        $this->db->select("*");
+        $this->db->from('tbl_our_approach_icons');
+        $query = $this->db->get();
+        return $query->result();
+    }
+     public function get_by_info_id($id){
+        $this->db->where("id", $id);
+        return $this->db->get("tbl_our_approach_icons")->row();
+    }
+     
+    public function info_update($data, $id){
+        $this->db->where('id', $id);
+        $this->db->update('tbl_our_approach_icons', $data);
+    }
+    public function delete_info($id)
+    {
+        $this->db->where('id', $id);
+        $this->db->delete('tbl_our_approach_icons');
+    }
+     //*********************  approachtinfo_add END *************/
+
+   //********************* LeaderShip *************/
+
+   public function leader_name_add($data){
+    $query = $this->db->insert('tbl_our_leadership_team',$data);
+    return $query;
+
+   }
+   public function get_our_leader_name(){
+    $this->db->select("*");
+    $this->db->from('tbl_our_leadership_team');
+    $query = $this->db->get();
+    return $query->result();
+   }
+
+   public function leader_add($data){
+    $query = $this->db->insert('tbl_leader_ship',$data);
+    return $query;
+
+}
+    public function get_our_leader(){
+        $this->db->select("*");
+        $this->db->from('tbl_our_approach_icons');
+        $query = $this->db->get();
+        return $query->result();
+    }
+    public function get_by_leader_id($id){
+        $this->db->where("id", $id);
+        return $this->db->get("tbl_our_approach_icons")->row();
+    }
+    
+    public function leader_update($data, $id){
+        $this->db->where('id', $id);
+        $this->db->update('tbl_our_approach_icons', $data);
+    }
+    public function delete_leader($id)
+    {
+        $this->db->where('id', $id);
+        $this->db->delete('tbl_our_approach_icons');
+    }
+ //*********************  LeaderShip END *************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
 ?>

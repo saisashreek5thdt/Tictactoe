@@ -58,8 +58,8 @@
 						  </div>
 					  </div>
 				  </div> 
-                  <div class="row">
-					  <div class="col-md-12 col-lg-12 col-xl-12">
+                    <div class="row">
+					 <div class="col-md-12 col-lg-12 col-xl-12">
                         <div class="card">
                            <div class="card-header">
                               <h4>Site Pages</h4>
