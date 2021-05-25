@@ -211,6 +211,7 @@ class Dashboard extends CI_Controller {
 	public function leader()
 	{
 		$data['name']  = $this->admin_model->get_our_leader_name();
+		$data['leader']  = $this->admin_model->get_our_leader();
 		$data['main'] = 'admin/leader';
 		$this->load->view('admin/header1', $data);
 		$this->load->view('admin/leader');
@@ -281,7 +282,6 @@ class Dashboard extends CI_Controller {
 			"description" => $this->input->post('description'),
 			
 		);
-		//print_r($data);die;
 		$leader_add = $this->admin_model->leader_add($data);
 		if ($leader_add) {
             $this->session->set_flashdata('success', 'Add successfully');

@@ -40,23 +40,33 @@
 
 
                   </div>
+				 
 				  <div class="row">
+				 
 					    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 col-12">
-                           <div class="card">
+						
+                            <div class="card">
+						    
                               <div class="card-header">
                                  <h4>Slider Images</h4>
                               </div>
+							 
                                 <div class="card-body">
-							         <a class="btn btn-primary btn-action mr-1" data-toggle="tooltip" title="Edit"> <i class="fas fa-pencil-alt"></i>
+								 
+							       
+                                    <div id="aniimated-thumbnials" class="list-unstyled row clearfix">
+									<?php foreach ($slider as $row) {?>
+										<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+										<a href="<?php base_url(); ?><?php echo $row->image ?>" data-sub-html="Demo Description">
+										<img class="img-responsive thumbnail" src="<?php base_url(); ?><?php echo $row->image ?>" alt="">
+										</a>
+										<a class="btn btn-primary btn-action mr-1" data-toggle="tooltip" title="Edit"> <i class="fas fa-pencil-alt"></i>
 									</a> 
 									<a class="btn btn-danger btn-action" data-toggle="tooltip" title="Delete" data-confirm="Are You Sure?|This action can not be undone. Do you want to continue?"
-                                        data-confirm-yes="alert('Deleted')"><i class="fas fa-trash"></i></a> 
-                                    <div id="aniimated-thumbnials" class="list-unstyled row clearfix">
-										<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-										<a href="<?php base_url(); ?>assets/admin/img/image-gallery/1.png" data-sub-html="Demo Description">
-										<img class="img-responsive thumbnail" src="<?php base_url(); ?>assets/admin/img/image-gallery/thumb/thumb-1.png" alt="">
-										</a>
+                                        data-confirm-yes="alert('Deleted')"><i class="fas fa-trash"></i></a>
+									
 										</div>
+										<?php } ?>
 										<!-- <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
 										<a href="<?php base_url(); ?>assets/admin/img/image-gallery/2.png" data-sub-html="Demo Description">
 										<img class="img-responsive thumbnail" src="<?php base_url(); ?>assets/admin/img/image-gallery/thumb/thumb-2.png" alt="">
@@ -67,10 +77,16 @@
 										<img class="img-responsive thumbnail" src="<?php base_url(); ?>assets/admin/img/image-gallery/thumb/thumb-3.png" alt="">
 										</a>
 										</div> -->
+										
                                     </div>
+								
+									
                                 </div>
+						
                            </div>
+
                         </div>
 				   </div> 
+				
                </section>
             </div>

@@ -44,8 +44,9 @@
 								<label class="col-form-label text-md-right col-12 col-md-3 col-lg-3">Select Leader</label>
 								<div class="col-sm-12 col-md-7">
 								   <select class="form-control selectric" name="leader" required>
-								   <?php foreach ($name as $row) { ?>
+								  
 									  <option>Select Leader</option> 
+									   <?php foreach ($name as $row) { ?>
 									  <option value="<?php echo $row->id ?>"><?php echo $row->name?></option>
 									<?php } ?>
 								   </select>
@@ -93,26 +94,29 @@
 					</div>
 				   </div>
 				   <div class="row">
+					  
 					   <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+					      <?php foreach ($leader as $leaders){?>
 						   <article class="article article-style-b">
 							  <div class="article-header">
-								 <div class="article-image" data-background="<?php base_url(); ?>assets/web/img/blog/img10.png">
+								 <div class="article-image" data-background="<?php echo base_url(); ?><?php echo $leaders->image; ?>" style="background-image: url('<?php echo base_url(); ?>assets/web/img/blog/img10.png');">
 								 </div>
 							  </div>
 							  <div class="article-details">
 								 <div class="article-title">
-									<h2><a href="#">The oddest place you will find photo studios</a></h2>
+									<h2><a href="#"><?php echo $leaders->title; ?></a></h2>
 								 </div>
-								 <p>A don't spirit gathered two under, lights said. May Multiply seasons you'll spirit tree morning
-									hath first signs.
+								 <p><?php echo substr($leaders->description,0,60); ?>
 								 </p>
 								 <div class="article-cta">
-									<a href="<?php base_url(); ?>leader_view">Read More <i class="fas fa-chevron-right"></i></a>
+									<a href="<?php base_url(); ?>leader_view" >Read More <i class="fas fa-chevron-right"></i></a>
 								 </div>
 							  </div>
 						   </article>
+						   <?php } ?>
 						</div>
-						<div class="col-12 col-sm-6 col-md-6 col-lg-3">
+					
+						<!-- <div class="col-12 col-sm-6 col-md-6 col-lg-3">
 						   <article class="article article-style-b">
 							  <div class="article-header">
 								 <div class="article-image" data-background="<?php base_url(); ?>assets/web/img/blog/img15.png">
@@ -130,8 +134,8 @@
 								 </div>
 							  </div>
 						   </article>
-						</div>
-						<div class="col-12 col-sm-6 col-md-6 col-lg-3">
+						</div> -->
+						<!-- <div class="col-12 col-sm-6 col-md-6 col-lg-3">
 						   <article class="article article-style-b">
 							  <div class="article-header">
 								 <div class="article-image" data-background="<?php base_url(); ?>assets/web/img/blog/img07.png">
@@ -149,8 +153,8 @@
 								 </div>
 							  </div>
 						   </article>
-						</div>
-						<div class="col-12 col-sm-6 col-md-6 col-lg-3">
+						</div> -->
+						<!-- <div class="col-12 col-sm-6 col-md-6 col-lg-3">
 						   <article class="article article-style-b">
 							  <div class="article-header">
 								 <div class="article-image" data-background="<?php base_url(); ?>assets/web/img/blog/img02.png">
@@ -168,7 +172,7 @@
 								 </div>
 							  </div>
 						   </article>
-						</div>
+						</div> -->
 					    <div class="col-12">
 							<a href="<?php base_url(); ?>more_leader">
 								<button class="btn btn-primary">More Leaders</button>

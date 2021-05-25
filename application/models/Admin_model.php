@@ -181,12 +181,16 @@ class Admin_model extends CI_Model {
     return $query;
 
 }
+ 
     public function get_our_leader(){
         $this->db->select("*");
-        $this->db->from('tbl_our_approach_icons');
+        $this->db->from('tbl_leader_ship');
         $query = $this->db->get();
         return $query->result();
     }
+
+
+
     public function get_by_leader_id($id){
         $this->db->where("id", $id);
         return $this->db->get("tbl_our_approach_icons")->row();
