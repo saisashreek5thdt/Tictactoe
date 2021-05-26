@@ -12,9 +12,13 @@ class Home extends CI_Controller {
 
 	public function index()
 	{
+
+		$data['slider']  = $this->admin_model->get_slider();
+		$data['approach']  = $this->admin_model->get_our_approach();
+		$data['info']  = $this->admin_model->get_our_approachtinfo();
 		$data['main'] = 'web/home';
 		$this->load->view('web/header', $data);
-		$this->load->view('web/home');
+		$this->load->view('web/home', $data);
 		$this->load->view('web/footer', $data);
 	}
 	
@@ -33,7 +37,7 @@ class Home extends CI_Controller {
 		if ($ipcheck != '') {
 		   $email = $this->input->post('email', TRUE);
 		   $password = $this->input->post('password', TRUE);
-		   $password = md5($password);
+		   $password = $password;
 		   //print_r( $password);die;
 		   $row = $this->admin_model->admin_login($email, $password);
 		  
@@ -50,12 +54,12 @@ class Home extends CI_Controller {
 			 // print_r($row->level);die;
 			   $this->session->set_userdata($sess_arr);
 			   if($row->level === 'admin'){
-				$this->session->set_flashdata('msg', 'Welcome');
+				$this->session->set_flashdata('success', 'Welcome to Tictactoe');
 				redirect('dashboard');
 	 
 			// access login for seo
 				}elseif($row->level === 'seo'){
-					$this->session->set_flashdata('msg', 'Welcome ');
+					$this->session->set_flashdata('success', 'Welcome to Tictactoe');
 			      redirect('dashboard');
 				}
 		     } else {

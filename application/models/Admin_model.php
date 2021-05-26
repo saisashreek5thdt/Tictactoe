@@ -76,8 +76,20 @@ class Admin_model extends CI_Model {
         return $query->result();
     }
 
+    
+    public function slider_edit($id){
+        $this->db->where("id", $id);
+        return $this->db->get("tbl_slider")->row();
+    }
 
-
+    public function slider_update($data, $id){
+        $this->db->where('id', $id);
+        $this->db->update('tbl_slider', $data);
+    }
+    public function slider_delete($data, $id){
+        $this->db->where('id', $id);
+        $this->db->update('tbl_slider', $data);
+    }
 
 
 
@@ -189,21 +201,27 @@ class Admin_model extends CI_Model {
         return $query->result();
     }
 
-
-
+    public function leader_view_id($id){
+        $this->db->where("id", $id);
+        return $this->db->get("tbl_leader_ship")->row();
+    }
+    public function leader_view_edit($id){
+        $this->db->where("id", $id);
+        return $this->db->get("tbl_leader_ship")->row();
+    }
     public function get_by_leader_id($id){
         $this->db->where("id", $id);
-        return $this->db->get("tbl_our_approach_icons")->row();
+        return $this->db->get("tbl_leader_ship")->row();
     }
     
     public function leader_update($data, $id){
         $this->db->where('id', $id);
-        $this->db->update('tbl_our_approach_icons', $data);
+        $this->db->update('tbl_leader_ship', $data);
     }
     public function delete_leader($id)
     {
         $this->db->where('id', $id);
-        $this->db->delete('tbl_our_approach_icons');
+        $this->db->delete('tbl_leader_ship');
     }
  //*********************  LeaderShip END *************/
 

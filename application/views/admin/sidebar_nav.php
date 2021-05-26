@@ -14,13 +14,13 @@
 					 </li>
                   </ul>
                </div>
-               <?php if ($this->session->flashdata('msg')) : ?>
+               <!-- <?php if ($this->session->flashdata('msg')) : ?>
                 <?php echo '<div class="alert alert-success icons-alert">
                 <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                     <i class="icofont icofont-close-line-circled">×</i>
                 </button>
                 <p><strong>Success! &nbsp;&nbsp;</strong>' . $this->session->flashdata('msg') . '</p></div>'; ?>
-            <?php endif; ?>
+            <?php endif; ?> -->
                <ul class="navbar-nav navbar-right">
                   <li class="dropdown">
                      <a href="#" data-toggle="dropdown"

@@ -63,6 +63,7 @@
 								<div class="col-sm-12 col-md-7">
 									<div class="custom-file">
 									   <input type="file" class="custom-file-input" id="customFile" name = "leader_image">
+									  
 									   <label class="custom-file-label" for="customFile">Choose file</label>
 									</div>
 								</div>
@@ -109,7 +110,7 @@
 								 <p><?php echo substr($leaders->description,0,60); ?>
 								 </p>
 								 <div class="article-cta">
-									<a href="<?php base_url(); ?>leader_view" >Read More <i class="fas fa-chevron-right"></i></a>
+									<a href="<?php base_url(); ?>dashboard/leader_view/<?php echo $leaders->id ?>" >Read More <i class="fas fa-chevron-right"></i></a>
 								 </div>
 							  </div>
 						   </article>

@@ -66,7 +66,7 @@ class Dashboard extends CI_Controller {
 
 		$add = $this->admin_model->create($data);
 		if ($add) {
-            $this->session->set_flashdata('msg', 'add successfully');
+			$this->session->set_flashdata('success', 'add successfully');
             redirect('slider');
         }else{
             $this->session->set_flashdata('error', 'please add category');
@@ -75,8 +75,46 @@ class Dashboard extends CI_Controller {
 
 	}
 
+	public function slider_edit($id){
 
+		$data['slider_edit']  = $this->admin_model->slider_edit($id);
+		$data['main'] = 'admin/slider_edit';
+		$this->load->view('admin/header1');
+		$this->load->view('admin/slider_edit',$data);
+		$this->load->view('admin/footer1');
 
+	}
+
+	public function slider_update($id){
+		if($_FILES['slider_image']['name'] != ""){
+			$config1['upload_path'] = 'uploads/sliders/';
+			$config1['allowed_types'] = '*';
+			$config1['file_name'] = $_FILES['slider_image']['name'];				 
+			$this->load->library('upload',$config1);
+			$this->upload->initialize($config1);
+			if($this->upload->do_upload('slider_image')){
+				$uploadData = $this->upload->data();
+				$slider_image = 'uploads/sliders/'.$uploadData['file_name'];
+					// /unlink($this->input->post("old_slider_image"));
+				}
+				}else{
+					$slider_image = $this->input->post("old_slider_image");
+		}
+		//print_r($slider_image);die();
+		$data = array(
+			"image" => $slider_image,
+		);
+
+		 $this->admin_model->slider_update($data, $id);
+		
+			$this->session->set_flashdata('success', 'Update successfully');
+            redirect('slider');
+	}
+	public function slider_delete($id){
+		$this->admin_model->slider_delete($id);
+		$this->session->set_flashdata('danger', 'successfully Delete');
+		redirect('slider');
+	}
 
 
 
@@ -101,7 +139,8 @@ class Dashboard extends CI_Controller {
 		);
 		$approach_add = $this->admin_model->our_approach($data);
 		if ($approach_add) {
-            $this->session->set_flashdata('msg', 'add successfully');
+			$this->session->set_flashdata('success', 'add successfully');
+
             redirect('approach');
         }else{
             $this->session->set_flashdata('error', 'please add');
@@ -271,7 +310,7 @@ class Dashboard extends CI_Controller {
 						
 				}
 				}else{
-					$leader_image_2 = $this->input->post("old_leader_image");
+					$leader_image_2 = $this->input->post("old_inner_image");
 		}
 
 		$data = array(
@@ -301,13 +340,83 @@ class Dashboard extends CI_Controller {
 		$this->load->view('admin/footer1', $data);
 	}
 	
-	public function leader_view()
+	public function leader_view($id)
 	{
+		$data["leader_view"]  = $this->admin_model->leader_view_id($id);
+		//print_r($data["leader_view"]);die;
 		$data['main'] = 'admin/leader_view';
 		$this->load->view('admin/header1', $data);
-		$this->load->view('admin/leader_view');
+		$this->load->view('admin/leader_view',$data);
 		$this->load->view('admin/footer1', $data);
 	}
+
+
+	public function leader_view_edit($id){
+		$data['name']  = $this->admin_model->get_our_leader_name();
+		$data["leader_view_edit"]  = $this->admin_model->leader_view_edit($id);
+		//print_r($data["leader_view"]);die;
+		$data['main'] = 'admin/leader_view_edit';
+		$this->load->view('admin/header1', $data);
+		$this->load->view('admin/leader_view_edit',$data);
+		$this->load->view('admin/footer1', $data);
+	}
+	public function leader_view_update($id){
+
+		if($_FILES['leader_image']['name'] != ""){
+			$config1['upload_path'] = 'uploads/leader/';
+			$config1['allowed_types'] = '*';
+			$config1['file_name'] = $_FILES['leader_image']['name'];				 
+
+			$this->load->library('upload',$config1);
+			$this->upload->initialize($config1);
+
+			if($this->upload->do_upload('leader_image')){
+				$uploadData = $this->upload->data();
+				$leader_image = 'uploads/leader/'.$uploadData['file_name'];
+			
+					// /unlink($this->input->post("old_slider_image"));
+						
+				}
+				}else{
+					$leader_image = $this->input->post("old_leader_image");
+		}
+
+		if($_FILES['leader_image_2']['name'] != ""){
+			$config1['upload_path'] = 'uploads/leader/';
+			$config1['allowed_types'] = '*';
+			$config1['file_name'] = $_FILES['leader_image_2']['name'];				 
+			$this->load->library('upload',$config1);
+			$this->upload->initialize($config1);
+
+			if($this->upload->do_upload('leader_image')){
+				$uploadData = $this->upload->data();
+				$leader_image_2 = 'uploads/leader/'.$uploadData['file_name'];
+			
+					// /unlink($this->input->post("old_slider_image"));
+						
+				}
+				}else{
+					$leader_image_2 = $this->input->post("old_inner_image");
+		}
+
+		$data = array(
+			"leader_id" => $this->input->post('leader'),
+			"image" => $leader_image,
+			"inner_image" => $leader_image_2,
+			"title" =>  $this->input->post('title'),
+			"description" => $this->input->post('description'),
+			
+		);
+
+		$this->admin_model->leader_update($data, $id);
+            $this->session->set_flashdata('success', 'Update successfully');
+           redirect('leader');
+	}
+	 public function delete_leader($id){
+		$this->admin_model->delete_leader( $id);
+		$this->session->set_flashdata('error', 'Delete successfully');
+		redirect('leader');
+	 }
 	
 	public function our_program()
 	{

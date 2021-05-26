@@ -1,4 +1,5 @@
 <!-- Main Content -->
+<?php //print_r($leader_view);exit; ?>
             <div class="main-content">
                <section class="section">
                   <div class="section-body">
@@ -7,19 +8,19 @@
                            <div class="card author-box">
                               <div class="card-body">
                                  <div class="author-box-center">
-                                    <img alt="image" src="<?php base_url(); ?>assets/admin/img/users/user-1.png" class="author-box-picture">
+                                    <img alt="image" src="<?php echo base_url(); ?><?php echo $leader_view->image ?>" class="author-box-picture">
                                     <div class="clearfix"></div>
                                     <div class="author-box-name">
-                                       <a href="#">Sarah Smith</a>
+                                       <a href="#"><?php echo $this->db->get_where('tbl_our_leadership_team',array('id'=> $leader_view->leader_id))->row()->name;?></a>
                                     </div>
                                     <div class="author-box-job"></div>
                                  </div>
-								 <div class="text-center">
-                                    <a href="<?php base_url(); ?>" class="btn btn-social-icon mr-1">
-										<i class="far fa-edit" style="color: #4CC85A !important;"></i>
+							            <div class="text-center">
+                                    <a href="<?php echo base_url(); ?>dashboard/leader_view_edit/<?php echo $leader_view->id ?>" class="btn btn-social-icon mr-1">
+									    	<i class="far fa-edit" style="color: #4CC85A !important;"></i>
                                     </a>
-                                    <a href="#" class="btn btn-social-icon mr-1">
-										<i class="far fa-trash-alt" style="color: #DB2E30 !important;"></i>
+                                    <a href="<?php echo base_url(); ?>dashboard/delete_leader/<?php echo $leader_view->id ?>" class="btn btn-social-icon mr-1">
+										  <i class="far fa-trash-alt" style="color: #DB2E30 !important;"></i>
                                     </a>
                                     <div class="w-100 d-sm-none"></div>
                                  </div> 
@@ -39,11 +40,11 @@
                                     <div class="tab-pane fade show active" id="about" role="tabpanel" aria-labelledby="home-tab2">
                                        <div class="row">
                                           <div class="col-md-3 col-6 b-r">
-                                             <strong>Full Name</strong>
+                                             <strong>Title</strong>
                                              <br>
-                                             <p class="text-muted">Emily Smith</p>
+                                             <p class="text-muted"><?php echo $leader_view->title ?></p>
                                           </div>
-                                          <div class="col-md-3 col-6 b-r">
+                                          <!-- <div class="col-md-3 col-6 b-r">
                                              <strong>Mobile</strong>
                                              <br>
                                              <p class="text-muted">(123) 456 7890</p>
@@ -57,13 +58,11 @@
                                              <strong>Location</strong>
                                              <br>
                                              <p class="text-muted">India</p>
-                                          </div>
+                                          </div> -->
                                        </div>
                                        <p class="m-t-30">
-										   Completed my graduation in Arts from the well known and renowned institution
-										   of India – SARDAR PATEL ARTS COLLEGE, BARODA in 2000-01, which was affiliated
-										   to M.S. University. I ranker in University exams from the same university
-										   from 1996-01.
+                                       <strong>Description</strong>
+                                       <?php echo $leader_view->description ?>
                                        </p>
                                     </div>
                                  </div>

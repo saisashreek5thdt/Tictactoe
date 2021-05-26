@@ -8,55 +8,28 @@
                   </div>
                </div>
                <div class="row">
-                  <!--<div class="col-sm-12 col-lg-5">
-                     <div id="owl-about" class="owl-carousel">
-                        <div class="item">
-                           <img class="img-responsive" src="<?php base_url(); ?>assets/web/img/about1.jpg" alt="">
-                        </div>
-                        <div class="item">
-                           <img class="img-responsive" src="<?php base_url(); ?>assets/web/img/about2.jpg" alt="">
-                        </div>
-                        <div class="item">
-                           <img class="img-responsive" src="<?php base_url(); ?>assets/web/img/about3.jpg" alt="">
-                        </div>
-                     </div>
-                  </div>-->
-                  <!-- text -->
+            
                   <div class="col-lg-12 col-sm-12">
-                     <h3 style="text-align: center !important;"></h3>
-                     <p>
-						At Tic Tac Toe our early years centre we aim for a high HQ (Happiness Quotient) as a happy child will enjoy his /her learning journey and become future ready for the next learning milestones.
-                     </p>
-                     <p>
-						 Our pedagogy is inspired by Bijubhai Badheka, Maria Montessori, Reggio Emelia and Froebel. It is learner centred and inquiry driven where we nurture the potential of every child.
-                     </p>
-					 <p>
-						 Our young learners use creative play to communicate their feelings which is so important. During creative play our young learners experience, discover, experiment and create things which ignite their curiosity and are the first steps into discovery learning.
-					 </p>
-					 <p>
-						 Music and Physical Movement is an integral part of our daily timetable.  We use children’s natural tendency to play which includes free play or unstructured play along with structured play which is learner centred.
-					 </p>
-					 <p>
-						 Interacting with friends at Tic Tac Toe gives our learners the chance to establish connections, note how others react to their actions and find solutions to overcome challenges together; all valuable skills that they will need in their future
-					 </p> 
-					 <!--<p>
-						 Our unique spiral, play based curriculum which embeds the 6 Tic Tac Toe Connectives:
-					 </p> -->
+                  <?php foreach($approach as $approachs){ ?>
+                                       <p class="m-t-30"><?php echo $approachs->content; ?>
+                                       </p>
+                <?php } ?>
                   </div>
                   <!-- /col-lg-8 -->
                </div>
                <!-- /row -->
                <div class="row features">
+                     <?php //foreach ($info as $row){ ?>
                   <!-- First Collumn -->
-                  <div class="col-lg-12 col-sm-12">
+                   <div class="col-lg-12 col-sm-12">
                      <!-- item1 -->
                      <div class="col-md-4 media text-center">
-                        <i class="flaticon-alphabet"></i>
+                        <i class="<?php ?>"></i>
                         <div class="media-body">
                            <h5 class="media-heading">Creative Play</h5>
                            <p>
 							   Teaching and Learning in Early Years should be Play based as Carl Jung has said “The creation of something new is not accomplished by the intellect but by the play instinct.”
-						   </p>
+						     </p>
                         </div>
                      </div>
                      <!-- item2 -->
@@ -113,6 +86,7 @@
                         </div>
                      </div>
                   </div>
+                  <?php //} ?>
                </div>
                <!-- /row features -->
                <div class="col-lg-12 col-sm-12 paper_block">
@@ -176,6 +150,7 @@
                      </blockquote> 
                   </div>
                   <!--owl testimonials-->
+                  
                </div>
                <!-- /col-lg-7 -->
             </div>

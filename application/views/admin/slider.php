@@ -60,10 +60,9 @@
 										<a href="<?php base_url(); ?><?php echo $row->image ?>" data-sub-html="Demo Description">
 										<img class="img-responsive thumbnail" src="<?php base_url(); ?><?php echo $row->image ?>" alt="">
 										</a>
-										<a class="btn btn-primary btn-action mr-1" data-toggle="tooltip" title="Edit"> <i class="fas fa-pencil-alt"></i>
+										<a href="<?php echo base_url(); ?>dashboard/slider_edit/<?php echo  $row->id; ?>" class="btn btn-primary btn-action mr-1" data-toggle="tooltip" title="Edit"> <i class="fas fa-pencil-alt"></i>
 									</a> 
-									<a class="btn btn-danger btn-action" data-toggle="tooltip" title="Delete" ><i class="fas fa-trash"></i></a>
-									
+									<a href="<?php echo base_url(); ?>dashboard/slider_delete/<?php echo  $row->id; ?>"  class="btn btn-danger btn-action" data-toggle="tooltip" title="Delete" ><i class="fas fa-trash"></i></a>
 										</div>
 										<?php } ?>
 										<!-- <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
