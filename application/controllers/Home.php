@@ -33,7 +33,7 @@ class Home extends CI_Controller {
 		if ($ipcheck != '') {
 		   $email = $this->input->post('email', TRUE);
 		   $password = $this->input->post('password', TRUE);
-		   $password = md5($password);
+		   $password = $password;
 		   //print_r( $password);die;
 		   $row = $this->admin_model->admin_login($email, $password);
 		  
