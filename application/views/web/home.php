@@ -46,6 +46,9 @@
 		  	include ('team_view.php');
 		  ?><?php */?>
          <?php 
+		  	include ('program.php');
+		  ?>
+		 <?php 
 		  	include ('activities_view.php');
 		  ?>
          <!-- Parallax object -->

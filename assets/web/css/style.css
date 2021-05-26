@@ -42,8 +42,10 @@ html{
      color:#696767;
 }
  p{
-     font-size: 16px;
+	 color:#333 !important;
+     font-size: 20px;
      line-height: 29px;
+	 word-spacing: 3.12px !important;
 }
 /* Headings */
  h1 {

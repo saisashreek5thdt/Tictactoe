@@ -16,7 +16,7 @@
 					 <li class="dropdown">
 						 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Explore</a>
 						 <ul class="dropdown-menu">
-                           <li><a href="<?php base_url(); ?>#about">Our Approach</a></li>
+                           <li><a href="<?php base_url(); ?>home#about">Our Approach</a></li>
                            <li><a href="<?php base_url(); ?>explore">Meet Our Leadership Team</a></li>
                            <li><a href="<?php base_url(); ?>program">Our Programmes</a></li>
                            <li><a href="<?php base_url(); ?>fees">Fee Structure</a></li>
@@ -25,23 +25,23 @@
                      <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Express</a>
                         <ul class="dropdown-menu">
-                           <li><a href="<?php base_url(); ?>enquiry">Enquiry Form</a></li>
-                           <li><a href="<?php base_url(); ?>testimonial">Testimonials</a></li>
-                           <li><a href="<?php base_url(); ?>contactus">Contact Us</a></li>
+							<li><a href="<?php base_url(); ?>testimonial">Testimonials</a></li>
+                            <li><a href="<?php base_url(); ?>contactus">Contact Us</a></li>
+                           <!--<li><a href="<?php base_url(); ?>enquiry">Enquiry Form</a></li>-->                           
                         </ul>
                      </li>
                      <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Enjoy</a>
                         <ul class="dropdown-menu">
-                           <li><a href="#gallery">Gallery</a></li>
+                           <li><a href="<?php base_url(); ?>home#gallery">Gallery</a></li>
                            <li><a href="<?php base_url(); ?>events">Events</a></li>
                            <li><a href="<?php base_url(); ?>media">Media</a></li>
-                           <li><a href="#page-top">Social Media</a></li>
+                           <!--<li><a href="#page-top">Social Media</a></li>-->
                         </ul>
                      </li>
 					 <li>
-						 <a href="https://educloud.in/admission/form/g3HdCm8wev9Q-octzzZILdcTpXj9NPgr6ZYNStf6Q-w" target="_blank">
-							 Admission
+						 <a href="<?php base_url(); ?>enquiry">
+							 Enquiry
 						 </a>
 					 </li> 
                   </ul>
