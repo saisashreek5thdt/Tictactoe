@@ -62,8 +62,7 @@
 										</a>
 										<a class="btn btn-primary btn-action mr-1" data-toggle="tooltip" title="Edit"> <i class="fas fa-pencil-alt"></i>
 									</a> 
-									<a class="btn btn-danger btn-action" data-toggle="tooltip" title="Delete" data-confirm="Are You Sure?|This action can not be undone. Do you want to continue?"
-                                        data-confirm-yes="alert('Deleted')"><i class="fas fa-trash"></i></a>
+									<a class="btn btn-danger btn-action" data-toggle="tooltip" title="Delete" ><i class="fas fa-trash"></i></a>
 									
 										</div>
 										<?php } ?>
